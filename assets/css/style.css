@@ -1,0 +1,365 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Variables */
+
+:root {
+
+    --bckgnd-color: rgb(100, 100, 170);
+    --contrast-color: rgb(160, 160, 30);
+    --dark-blue: rgb(60, 60, 170);
+    --box-bckbnd-color: antiquewhite;
+  }
+
+
+
+
+body {
+    background-color: var(--bckgnd-color)
+}
+
+/* Header Section*/
+
+header{
+    display: block;
+    background-color: var(--dark-blue);
+    height: 80px;
+    position: fixed;
+    border-bottom: solid var(--contrast-color) 5px;
+    width: 100%;
+    z-index: 2;
+}
+
+nav{
+    float: right;
+    padding: 20px;
+    }
+
+nav ul{
+    display: block;
+    top: 10px;
+}
+nav ul li{
+    display: inline-block;
+    top: 10px;
+    text-align: right;
+    margin: 0 50px;
+}
+nav ul li a{
+    font-size: xx-large;
+    color: var(--contrast-color);
+    font-weight: bold;
+}
+/* Main Section */
+main
+{
+    padding-top: 100px;    
+    display: block;
+    
+}
+
+.main-section-headers{
+    padding: 20px;
+    text-align: center;
+    color: var(--dark-blue);
+    border-radius: 5px;
+    display: block;
+    font-size: 150%;   
+}
+
+.content-enclosure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: solid var(--contrast-color);
+}
+
+.boxes-container
+{
+    justify-content: center;
+}
+
+.extra-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sub-section{
+padding: 50px;
+}
+
+.section-headers{
+    font-size: xxx-large;
+    margin: 20px;
+    color: var(--dark-blue);
+
+}
+
+
+
+
+
+    /* About Me Section */
+
+.about-box{
+    border: solid var(--dark-blue) 5px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--box-bckbnd-color);
+
+
+}
+
+.about-text{
+    border: solid var(--contrast-color) 2px; 
+    margin: 10px;
+    flex: 1 1 950px;
+}
+
+.about-text p{
+padding: 20px;
+font-size: larger;
+}
+
+.about-img{
+    display: inline;
+    margin: 10px;
+}
+
+.about-img img{
+    width: 250px;
+    position: relative;
+    padding: 5px;
+    border: solid var(--contrast-color) 2px;  
+}
+
+    /* Project Section */
+
+
+/* Tall Box */
+
+h3{
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.tall-box{
+    border: solid var(--dark-blue) 5px;
+    width: 600px;
+    height: 530px;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    background-color: var(--box-bckbnd-color);
+    display: block;
+    justify-content: center;
+
+}
+
+.tall-box-image{
+    margin: 10px;
+
+}
+
+.tall-box-image img{
+    padding: 5px;
+    border: solid var(--contrast-color) 2px;
+    width: 550px;
+    height: 375px;
+}
+
+.tall-box-description{
+    margin: 5px;
+    text-align: center;
+    font-size: x-large;
+    display: block;
+}
+
+.tall-box-description a{
+    font-size: large;
+}
+
+/* Boxes */
+
+.box{
+    border: solid var(--dark-blue) 5px;
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    background-color: var(--box-bckbnd-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-image{
+    margin: 10px;
+}
+
+.box-image img{
+    padding: 5px;
+    border: solid var(--contrast-color) 2px;
+    width: 350px;
+    height: 200px;
+}
+
+.box-description{
+    margin: 5px;
+    text-align: center;
+    font-size: large;
+    display: block;
+}
+
+
+
+.box-description a{
+    font-size: medium;
+}
+
+/* Contact Me FOrmating */
+
+/* Small Boxes */
+
+.small-box{
+    border: solid var(--dark-blue) 5px;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px; 
+    display: block;
+    background-color: var(--box-bckbnd-color);
+}
+
+.contact-me-box-link{
+    display: block;
+    text-align: center;
+    margin: 35px;
+}
+
+.contact-me-box-link a{
+    font-size: xx-large;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+
+/* Footer Section */
+
+footer{
+    display: block;
+    height: 60px;
+    background-color: var(--dark-blue);
+    text-align: center;
+    border-top: solid var(--contrast-color) 5px;
+
+}
+
+footer h3 {
+    padding: 15px;
+    z-index: 2;
+    color: var(--contrast-color);
+}
+
+
+
+
+
+/* Tablets */
+
+@media screen and (max-width: 992px) {
+    /* header{
+        background-color: #bb8588;
+    } */
+    nav ul li{
+        margin: 0 40px;
+    }
+
+    .about-img img{
+        width: 350px;
+        height: unset;
+    }
+
+    .tall-box-image img{
+        width: 350px;
+    }
+
+    .tall-box, .box{
+        display: flex;
+        flex-wrap: wrap;
+        width: unset;
+        height: auto;
+        flex: 1 1 400px;
+    }
+}
+  
+  /* Large smartphones */
+
+@media screen and (max-width: 768px) {
+    /* header {
+        background-color: #89bb85;
+    } */
+    
+    nav ul li{
+        margin: 0 25px;
+    }
+
+    nav ul li a{
+        font-size: x-large;
+    }
+}
+  
+  /* Small smartphones */
+
+@media screen and (max-width: 576px) {
+    /* header {
+        background-color: #8ac4ff;
+    } */
+
+    nav ul li{
+        margin: 0 10px;
+    }
+    
+    nav ul li a{
+        font-size: x-large;
+    }
+  
+    .about-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+  /* ## Acceptance Criteria
+
+Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
+
+```
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+
+WHEN I resize the page or view the site on various screens and devices
+/* THEN I am presented with a responsive layout that adapts to my viewport  */
