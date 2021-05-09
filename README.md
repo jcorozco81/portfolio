@@ -28,7 +28,7 @@ Working on this project helped me to improve my skills and knowledge about HTML 
 
 Or
 
-1. The live webpage is served on the Github Pages website and it can be acessed by clicking on the following link: https://jcorozco81.github.io/homework-1/. The webpage will open on your default browser.
+1. The live webpage is served on the Github Pages website and it can be acessed by clicking on the following link: https://jcorozco81.github.io/portfolio/. The webpage will open on your default browser.
 
 
 ## Usage
